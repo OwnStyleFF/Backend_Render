@@ -1,8 +1,10 @@
-from flask import Flask, request, jsonify, session
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 from gc_core import generar_respuesta
 import os
 
 app = Flask(__name__)
+CORS(app)  # Permite peticiones desde cualquier dominio
 app.secret_key = os.urandom(16)
 os.makedirs("sesiones", exist_ok=True)
 
