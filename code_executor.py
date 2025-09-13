@@ -1,0 +1,1 @@
+# Opcional: aquí puedes agregar funciones para ejecutar código seguro
